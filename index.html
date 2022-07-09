@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Таблицы</p>
+        <p>Якорные ссылки</p>
+        <p>Строчные и блочные теги</p>
+        <p>Формы</p>
+        <!-- <p>Семантика</p> -->
+        <p>Аудио и видео</p>
+    </div>
+
+    <div>
+        <h3>Таблицы</h3>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td colspan="2">1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- colspan - ширина по горизонтали (2 - ширина 2 ячеек) -->
+        <!-- rowspan - ширина по вертикали (2 - ширина 2 ячеек) -->
+        <!-- border - ширина границы -->
+    </div>
+
+
+    <div>
+        <h3>Якорные ссылки</h3>
+        <p>
+            <a href="#valera">Lorem</a> ipsum dolor sit, amet consectetur adipisicing elit. Beatae perferendis 
+            deleniti obcaecati neque similique, cumque cupiditate ea numquam nesciunt 
+            dolorum, voluptate magni. Ipsam cum dolorum alias vel obcaecati. Illo, soluta 
+            et? Eligendi, alias. Perferendis earum velit, ratione obcaecati voluptatem 
+            doloremque ullam laudantium minus nihil nobis dolorum, cumque ipsa veritatis 
+            maiores distinctio incidunt minima eaque molestias rerum quo vero blanditiis 
+            non. Dolorum minus, possimus alias eius placeat saepe tenetur iusto labore 
+            ullam, incidunt exercitationem natus totam et! Ipsum, ut consequatur dolorum 
+            enim sit, veritatis expedita unde eos quasi laborum id, autem corrupti non 
+            dolor ad rem fuga iure eaque at <a id="valera">quam</a>.
+        </p>
+        <!-- <a href="#valera"> - сама ссылка -->
+        <!-- <a id="valera"> - куда будет направлен пользователь после клика -->
+    </div>
+
+
+    <div>
+        <h3>Строчные и блочные теги</h3>
+        <!-- блочные теги - теги, занимающие все свободное пространство (div, p, ul, li) -->
+        <!-- строчные теги - теги, занимающие только свою собственную длину (a, span) -->
+    </div>
+
+    <div>
+        <h3>Формы</h3>
+        <form>
+            <h2>Регистрация</h2>
+            <input type="text" name="password" minlength="3" placeholder="123" required>
+            <input type="password" name="password" minlength="3" placeholder="test" required>
+            <input type="number" name="password" minlength="3" placeholder="123" required>
+            <a href="#">Забыли пароль?</a>
+            <button type="button">Войти</button>
+            <a href="#">Регистрация</a>
+        </form>
+    </div>
+
+    <div>
+        <h3>Аудио и видео</h3>
+        <audio src="audio/audio_flow.mp3" controls loop></audio>
+        <audio controls>
+            <source src="audio/audio_flow.mp3">
+            <source src="audio/audio_flow.ogg">
+            <source src="audio/audio_flow.mp4">
+            Мелодия
+        </audio>
+
+        <video src="video/sample-5s.mp4" controls width="500"></video>
+        <video poster="img/test.jpg" width="500" controls>
+            <source src="video/sample-5s.mp4">
+            <source src="video/sample-5s.mp4">
+        </video>
+    </div> 
+</body>
+</html>
